@@ -25,4 +25,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-  using this URL we can see the visual data interpretation https://aysh03.github.io/Data-visualization-demo/github-hosting-project
+
+ ** Using this URL **
+  we can see the visual data interpretation https://aysh03.github.io/Data-visualization-demo/github-hosting-project
