@@ -1,0 +1,75 @@
+<div>
+
+<main class="flex justify-center items-center">
+  <app-line-chart *ngIf="isChartActive('line')"></app-line-chart>
+  <app-bar-chart *ngIf="isChartActive('bar')"></app-bar-chart>
+  <app-pie-chart *ngIf="isChartActive('pie')"></app-pie-chart>
+  <app-doughnut-chart *ngIf="isChartActive('doughnut')"></app-doughnut-chart>
+</main>
+
+<div class="flex justify-center nv">
+  <nav class="fixed bottom-24 left-1/2 transform -translate-x-1/2">
+    <ul class="flex justify-center space-x-8">
+      <li class="border-black text-center">
+        <a
+          [routerLink]="'/line'"
+          class="text-gray-500 hover:text-gray-900"
+          (click)="changeChart('line')"
+        >
+          <img
+            src="../../assets/images/line chart.png"
+            alt=""
+            class="w-20 h-16 mb-3"
+          />
+          <span class="text-lg"> Line Chart</span>
+        </a>
+      </li>
+      <li class="text-center">
+        <a
+          [routerLink]="'/pie'"
+          class="text-gray-500 hover:text-gray-900"
+          (click)="changeChart('pie')"
+        >
+          <div class="items-center">
+            <img
+              src="../../assets/images/pieChart.png"
+              alt=""
+              class="w-28 h-16 mb-3"
+            />
+
+            <span class="text-lg text-clip"> PieChart</span>
+          </div>
+        </a>
+      </li>
+      <li class="text-center">
+        <a
+        [routerLink]="'/bar'"
+          class="text-gray-500 hover:text-gray-900"
+          (click)="changeChart('bar')"
+        >
+          <img
+            src="../../assets/images/bar chart.png"
+            alt=""
+            class="w-28 h-16 mb-3"
+          />
+          <span class="text-lg"> BarChart</span>
+        </a>
+      </li>
+      <li class="text-center">
+        <a
+        [routerLink]="'/doughnut/'"
+          class="text-gray-500 hover:text-gray-900"
+          (click)="changeChart('doughnut')"
+        >
+          <img
+            src="../../assets/images/doughnutChart.png"
+            alt=""
+            class="w-20 h-16 mb-3"
+          />
+          <span class="text-lg"> Doughnut</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</div>
